@@ -26,7 +26,12 @@ struct v2f
 
 float character(float n, float2 p) 
 {
-    p = floor(p * float2(4, -4) + 2.5f);
+#ifdef UNITY_HALF_TEXEL_OFFSET
+    float2 offs = float2(2.5f, 2.5f);
+#else
+    float2 offs = float2(2, 2);
+#endif
+    p = floor(p * float2(4, -4) + offs);
     if (clamp(p.x, 0, 4) == p.x && clamp(p.y, 0, 4) == p.y)
     {
         float c = fmod(n / exp2(p.x + 5 * p.y), 2);
