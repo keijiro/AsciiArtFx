@@ -1,7 +1,7 @@
 ASCII Fx
 --------
 
-ASCII Fx is an image effect for Unity that resembles "Newskool" style ASCII art of given frames.
+ASCII Fx is an image effect for Unity that resembles "Newskool" style ASCII art images of given frames.
 
 ![screenshot](http://keijiro.github.io/AsciiFx/screenshot.png)
 
