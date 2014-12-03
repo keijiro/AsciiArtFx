@@ -1,10 +1,10 @@
-﻿Shader "Hidden/AsciiFx"
+﻿Shader "Hidden/ASCII Art Fx"
 {
     Properties 
     {
         _MainTex("Source Image", 2D) = "" {}
-        _Color("Character Color", Color) = (1, 1, 1, 1)
-        _Alpha("Blend Factor", Float) = 1
+        _Color("Color Tint", Color) = (1, 1, 1, 1)
+        _Alpha("Alpha Blending", Float) = 1
         _Scale("Scale Factor", Float) = 1
     }
 

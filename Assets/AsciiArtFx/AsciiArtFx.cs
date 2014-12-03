@@ -2,7 +2,8 @@
 using System.Collections;
 
 [ExecuteInEditMode]
-public class AsciiFx : MonoBehaviour
+[RequireComponent(typeof(Camera))]
+public class AsciiArtFx : MonoBehaviour
 {
     public Color colorTint = Color.white;
 
